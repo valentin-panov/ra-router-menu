@@ -23,7 +23,7 @@ export default function App() {
               className='menu__item'
               activeClassName='menu__item-active'
               exact
-              to='/'
+              to={`${baseURL}/`}
             >
               ГЛАВНАЯ
             </NavLink>
@@ -31,7 +31,7 @@ export default function App() {
               className='menu__item'
               activeClassName='menu__item-active'
               exact
-              to='/drift'
+              to={`${baseURL}/drift`}
             >
               ДРИФТ-ТАКСИ
             </NavLink>
@@ -39,7 +39,7 @@ export default function App() {
               className='menu__item'
               activeClassName='menu__item-active'
               exact
-              to='/timeattack'
+              to={`${baseURL}/timeattack`}
             >
               TIME ATTACK
             </NavLink>
@@ -47,7 +47,7 @@ export default function App() {
               className='menu__item'
               activeClassName='menu__item-active'
               exact
-              to='/forza'
+              to={`${baseURL}/forza`}
             >
               FORZA KARTING
             </NavLink>
