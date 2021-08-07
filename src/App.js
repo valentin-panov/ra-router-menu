@@ -11,6 +11,8 @@ import DriftPage from './components/DriftPage';
 import TimeAttackPage from './components/TimeAttackPage';
 import ForzaPage from './components/ForzaPage';
 
+const baseURL = '/ra-router-menu';
+
 export default function App() {
   return (
     <Router>
@@ -54,10 +56,10 @@ export default function App() {
       </div>
       <div className='page'>
         <Switch>
-          <Route path='/' exact component={HomePage} />
-          <Route path='/drift' component={DriftPage} />
-          <Route path='/timeattack' component={TimeAttackPage} />
-          <Route path='/forza' component={ForzaPage} />
+          <Route path={`${baseURL}/`} exact component={HomePage} />
+          <Route path={`${baseURL}/drift`} component={DriftPage} />
+          <Route path={`${baseURL}/timeattack`} component={TimeAttackPage} />
+          <Route path={`${baseURL}/forza`} component={ForzaPage} />
         </Switch>
       </div>
     </Router>
